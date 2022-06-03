@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:doctor_app/text_style.dart';
 import 'package:doctor_app/ui/screens/authentication/components/sign_up_form.dart';
 import 'package:doctor_app/ui/screens/authentication/forgot_password.dart';

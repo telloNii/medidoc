@@ -53,10 +53,10 @@ class MyApp extends StatelessWidget {
         WelcomeScreen.id: (context) => const WelcomeScreen(),
         HomeScreen.id: (context) => const HomeScreen(),
         MainNavigation.id: (context) => const MainNavigation(),
-        SignInScreen.id: (context) => SignInScreen(),
-        SignUpScreen.id: (context) => SignUpScreen(),
+        SignInScreen.id: (context) => const SignInScreen(),
+        SignUpScreen.id: (context) => const SignUpScreen(),
         DoctorProfile.id: (context) => const DoctorProfile(),
-        Settings.id: (context) => const Settings()
+        ProfileSettings.id: (context) => const ProfileSettings(),
       },
     );
   }

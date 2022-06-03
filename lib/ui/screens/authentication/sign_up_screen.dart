@@ -114,7 +114,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       const SizedBox(height: defaultPadding),
                       const TextFieldName(text: "Password"),
                       TextFormField(
-                        obscureText: false,
+                        obscureText: true,
                         decoration: const InputDecoration(hintText: "******"),
                         validator: passwordValidator,
                         controller: _passwordTextController,
@@ -123,7 +123,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       const SizedBox(height: defaultPadding),
                       const TextFieldName(text: "Confirm Password"),
                       TextFormField(
-                        obscureText: false,
+                        obscureText: true,
                         decoration: const InputDecoration(hintText: "*******"),
                         validator: (pass) =>
                             MatchValidator(errorText: "Password do not  match")
@@ -146,6 +146,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             .then((value) async {
                           CollectionReference ref =
                               _firebaseFirestore.collection('users');
+
                           User _firebaseUser = _firebaseAuth.currentUser!;
                           _firebaseUser.updateDisplayName(_usernameTextController.text);
                           _firebaseUser.updatePhotoURL(
@@ -156,6 +157,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             'uid': _firebaseUser.uid,
                             'image':
                                 "https://png.pngitem.com/pimgs/s/111-1114675_user-login-person-man-enter-person-login-icon.png",
+                            'date_joined': DateTime.now().millisecondsSinceEpoch,
+                            'profileImage': '',
                           });
                         }).then((value) =>
                                 Navigator.popAndPushNamed(context, MainNavigation.id));

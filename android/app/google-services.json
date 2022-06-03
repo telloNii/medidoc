@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "867001886606",
+    "project_id": "project-medi-doc-mini",
+    "storage_bucket": "project-medi-doc-mini.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867001886606:android:01f1d5cf5019a4dbe366df",
+        "android_client_info": {
+          "package_name": "com.example.medic_doc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867001886606-tpg9baj22hnbfo1ojeti5bdnsobbjbkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxi7mTxefuoTxFgz_MdgXBJEUzbb0-Dco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867001886606-tpg9baj22hnbfo1ojeti5bdnsobbjbkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

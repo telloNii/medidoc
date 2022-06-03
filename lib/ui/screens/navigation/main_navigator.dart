@@ -33,7 +33,7 @@ class _MainNavigationState extends State<MainNavigation> {
     const HomeScreen(),
     const DoctorsScreen(),
     const Notifications(),
-    UserProfile(),
+    const UserProfile(),
   ];
 
   @override

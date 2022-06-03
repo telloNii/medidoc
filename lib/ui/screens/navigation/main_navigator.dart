@@ -1,18 +1,11 @@
-import 'dart:io';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:doctor_app/constants.dart';
-import 'package:doctor_app/models/user.dart';
 import 'package:doctor_app/ui/screens/doctors/doctors.dart';
 import 'package:doctor_app/ui/screens/home.dart';
 import 'package:doctor_app/ui/screens/notification/notifications.dart';
 import 'package:doctor_app/ui/screens/profile/user_profile.dart';
 import 'package:doctor_app/ui/widgets/active_tab_indicator.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_storage/firebase_storage.dart';
+
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:ndialog/ndialog.dart';
 
 class MainNavigation extends StatefulWidget {
   const MainNavigation({Key? key}) : super(key: key);
